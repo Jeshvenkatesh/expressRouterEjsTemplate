@@ -1,0 +1,9 @@
+extends layouts/mainlayout.pug
+
+block content
+    main
+        if prods.length > 0
+            each product in prods
+                h1 #{product.title}
+        else
+            h1 No Products..
